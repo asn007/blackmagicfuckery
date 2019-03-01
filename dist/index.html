@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/milligram.min.css">
+    <style>
+      html, body, textarea {
+        background: #000 !important;
+        color: #fff !important;
+      }
+      html, body {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #results {
+        min-width: 50%;
+      }
+      #flexcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #demo {
+        border: 1px solid white;
+        border-radius: 0;
+        width: 80%;
+        max-width: 80%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flexcontainer">
+      <h1>Webpack Live Edit Demo</h1>
+      <div id="results"></div>
+      <p>Попробуем поиграть с multiply.js</p>
+      <textarea id="demo" rows="10"></textarea>
+      <button onclick="apply()">Apply</button>
+    </div>
+  </body>
+</html>
